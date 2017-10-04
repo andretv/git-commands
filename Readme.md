@@ -12,6 +12,14 @@ git config --global core.editor code
 
 // comandos uteis
 
+git config --global user.name "Andre Vaccari"
+
+git config --global user.email "andrevaccari95@gmail.com"
+
+git config --global core.editor code
+
+// comandos uteis
+
 git status // informa a situação atual da pasta
 
 git log // mostra o historico do que foi feito
@@ -34,6 +42,8 @@ git reset HEAD #nome-do-arquivo# // tira o arquivo da fila do STAGE
 git reset --soft // pega as modificações e volta, mas o arquivo fica pronto para ser commitado novamente
 git reset --mixed // pega as modificações e volta, mas o arquivo para antes do STAGE
 git reset --hard // ignora a existencia do commit e reseta o arquivo para antes dele
+
+git remote add #nome-remoto(padrão => origin)# #link-do-repositorio-remoto#
 
 git remote // mostra os repositorios remotos adicionados
 git remote -v // mostra os repositorios remotos com endereço
