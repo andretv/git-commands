@@ -4,12 +4,6 @@ Este é um repositorio teste para testar o git!
 
 Don't mind me...
 
-git config --global user.name "Andre Vaccari"
-
-git config --global user.email "andrevaccari95@gmail.com"
-
-git config --global core.editor code
-
 // comandos uteis
 
 git config --global user.name "Andre Vaccari"
