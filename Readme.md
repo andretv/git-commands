@@ -43,3 +43,9 @@ git remote // mostra os repositorios remotos adicionados
 git remote -v // mostra os repositorios remotos com endereço
 
 git push -u origin master // primeiro push. -u serve para tornar o "push origin master" padrão. "origin => pra onde vai" "master => de onde vem"
+
+git checkout #nome-do-branch# // muda para o branch ja criado
+git checkout -b #nome-do-branch# // criar novo branch no repositório
+
+git branch // mostra todos os branchs no repositório, * no atual
+git branch -D #nome-do-branch# // Deleta o branch
