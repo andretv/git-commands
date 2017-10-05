@@ -28,9 +28,9 @@
 6. git checkout _nome-do-arquivo_ // Retorna o arquivo ao estado do ultimo commit
 
 7. .git reset HEAD _nome-do-arquivo_ // tira o arquivo da fila do STAGE
-    1. git reset --soft // pega as modificações e volta, mas o arquivo fica pronto para ser commitado novamente
-    2. git reset --mixed // pega as modificações e volta, mas o arquivo para antes do STAGE
-    3. git reset --hard // ignora a existencia do commit e reseta o arquivo para antes dele
+    1. git reset --soft _commit-hash_ // pega as modificações e volta, mas o arquivo fica pronto para ser commitado novamente
+    2. git reset --mixed _commit-hash_ // pega as modificações e volta, mas o arquivo para antes do STAGE
+    3. git reset --hard _commit-hash_ // ignora a existencia do commit e reseta o arquivo para antes dele
 
 8. git remote add _nome-remoto(padrão => origin)_ _link-do-repositorio-remoto_
 
