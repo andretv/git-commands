@@ -55,3 +55,9 @@
 
 12. __git branch__ // mostra todos os branchs no repositório, * no atual
     1. __git branch -D__ _nome-do-branch_ // Deleta o branch
+
+
+13. __git merge__ _nome-do-branch_ // merge do branch passado com o branch atual
+
+
+14. __git rebase__ _nome-do-branch_ // rebase do branch passado com o branch atual
