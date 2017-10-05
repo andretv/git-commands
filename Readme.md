@@ -1,51 +1,46 @@
-Git
+# Git Commands
 
-Este é um repositorio teste para testar o git!
+#### Este é um repositorio com os comandos GIT!
 
-Don't mind me...
+## Configurações Globais
 
-// comandos uteis
+* git config --global user.name "_username_"
+* git config --global user.email "_email_"
+* git config --global core.editor code
 
-git config --global user.name "Andre Vaccari"
+## Comandos
 
-git config --global user.email "andrevaccari95@gmail.com"
+1. __git status__ // informa a situação atual da pasta
 
-git config --global core.editor code
+2. git log // mostra o historico do que foi feito
+    1. git log --decorate // melhores infos, branchs...
+    2. git log --author="_username_" // filtra autores
+    3. git log --graph // mostra de forma grafica
 
-// comandos uteis
+3. git shortlog // mostra menos detalhadamente os commits
+    1. git shortlog -sn // mostra apenas a qtde de commits e a pessoa
 
-git status // informa a situação atual da pasta
+4. git show _commit-hash_ // mostra detalhadamente o commit
 
-git log // mostra o historico do que foi feito
-git log --decorate // melhores infos, branchs...
-git log --author="" // filtra autores
-git log --graph // mostra de forma grafica
+5. git diff // mostra as diferenças nos arquivos do projeto com os arquivos commitados
+    1. git diff --name-only // mostra apenas uma lista com o nome dos arquivos diferentes dos commitados
 
-git shortlog // mostra menos detalhadamente os commits
-git shortlog -sn // mostra apenas a qtde de commits e a pessoa
+6. git checkout _nome-do-arquivo_ // Retorna o arquivo ao estado do ultimo commit
 
-git show #commit-hash# // mostra detalhadamente o commit
+7. .git reset HEAD _nome-do-arquivo_ // tira o arquivo da fila do STAGE
+    1. git reset --soft // pega as modificações e volta, mas o arquivo fica pronto para ser commitado novamente
+    2. git reset --mixed // pega as modificações e volta, mas o arquivo para antes do STAGE
+    3. git reset --hard // ignora a existencia do commit e reseta o arquivo para antes dele
 
-git diff // mostra as diferenças nos arquivos do projeto com os arquivos commitados
-git diff --name-only // mostra apenas uma lista com o nome dos arquivos diferentes dos commitados
+8. git remote add _nome-remoto(padrão => origin)_ _link-do-repositorio-remoto_
 
-git checkout #nome-do-arquivo# // Retorna o arquivo ao estado do ultimo commit
+9. git remote // mostra os repositorios remotos adicionados
+    1. git remote -v // mostra os repositorios remotos com endereço
 
-git reset HEAD #nome-do-arquivo# // tira o arquivo da fila do STAGE
+10. git push -u origin master // primeiro push. -u serve para tornar o "push origin master" padrão. "origin => pra onde vai" "master => de onde vem"
 
-git reset --soft // pega as modificações e volta, mas o arquivo fica pronto para ser commitado novamente
-git reset --mixed // pega as modificações e volta, mas o arquivo para antes do STAGE
-git reset --hard // ignora a existencia do commit e reseta o arquivo para antes dele
+11. git checkout _nome-do-branch_ // muda para o branch ja criado
+    1. git checkout -b _nome-do-branch_ // criar novo branch no repositório
 
-git remote add #nome-remoto(padrão => origin)# #link-do-repositorio-remoto#
-
-git remote // mostra os repositorios remotos adicionados
-git remote -v // mostra os repositorios remotos com endereço
-
-git push -u origin master // primeiro push. -u serve para tornar o "push origin master" padrão. "origin => pra onde vai" "master => de onde vem"
-
-git checkout #nome-do-branch# // muda para o branch ja criado
-git checkout -b #nome-do-branch# // criar novo branch no repositório
-
-git branch // mostra todos os branchs no repositório, * no atual
-git branch -D #nome-do-branch# // Deleta o branch
+12. git branch // mostra todos os branchs no repositório, * no atual
+    1. git branch -D _nome-do-branch_ // Deleta o branch
