@@ -14,9 +14,9 @@
 
 
 2. __git log__ // mostra o historico do que foi feito
-    1. git log --decorate // melhores infos, branchs...
-    2. git log --author="_username_" // filtra autores
-    3. git log --graph // mostra de forma grafica
+    1. __git log__ --decorate // melhores infos, branchs...
+    2. __git log__ --author="_username_" // filtra autores
+    3. __git log__ --graph // mostra de forma grafica
 
 
 3. __git shortlog__ // mostra menos detalhadamente os commits
