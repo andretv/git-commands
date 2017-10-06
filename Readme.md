@@ -66,3 +66,10 @@
     1. __git stash apply__ // coloca o stash pronto para commit
     2. __git stash list__ // lista todos os stashs existentes
     3. __git stash clear__ // limpa o stash
+
+16. __git tag -a__ _tag_ __-m__ _mensagem_ // cria nova tag
+    1. __git push origin master --tag__ // sobe a tag para o repositório remoto
+    2. __git tag__ // lista todas as tags
+    3. __git tag -d__ _tag_ // deleta a tag
+
+17. __git push origin :__ _branch ou tag_ // deleta a tag ou branch do repositorio remoto
