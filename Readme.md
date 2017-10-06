@@ -61,3 +61,8 @@
 
 
 14. __git rebase__ _nome-do-branch_ // rebase do branch passado com o branch atual
+
+15. __git stash__ // Coloca em stash os arquivos modificados, nao comitando no momento
+    1. __git stash apply__ // coloca o stash pronto para commit
+    2. __git stash list__ // lista todos os stashs existentes
+    3. __git stash clear__ // limpa o stash
